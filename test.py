@@ -14,7 +14,8 @@ def predict(image_path):
     
 prediction = predict(image_path)
 
-if prediction == 1:
-    print('Wildfire')
-elif prediction == 0:
-    print('Not a wildfire')
+if __name__ == '__main__':
+    if prediction == 1:
+        print('Wildfire')
+    elif prediction == 0:
+        print('Not a wildfire')
