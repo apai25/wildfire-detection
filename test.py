@@ -2,7 +2,7 @@ from tensorflow.keras.models import load_model
 import numpy as np 
 from tensorflow.keras.preprocessing.image import load_img, img_to_array
 
-image_path = 'data/test/not_wildfire/images(1).png'
+image_path = 'data/test/not_wildfire/images(13).png'
 
 def predict(image_path):
     cnn = load_model('model')
