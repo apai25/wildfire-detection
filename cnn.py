@@ -35,7 +35,7 @@ cnn.add(Dense(units=1, activation='sigmoid'))
 cnn.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 
 # Fitting the CNN onto training dataset and validating it with test dataset. Training for 100 epochs.
-cnn.fit(x=train, validation_data=test, epochs=1)
+cnn.fit(x=train, validation_data=test, epochs=50, batch_size=32)
 
 # Saving the model
 cnn.save('model', save_format='tf')
